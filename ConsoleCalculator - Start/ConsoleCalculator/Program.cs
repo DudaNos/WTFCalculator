@@ -20,7 +20,7 @@ namespace ConsoleCalculator
 
         }
 
-        public void Calc(string txt)
+        public double Calc(string txt)
         {
             List<double> numbers = new List<double>();  //list of all the numbers in the calculation
             // WTF: [Naming] calculator for operators
@@ -163,7 +163,7 @@ namespace ConsoleCalculator
             }
 
             var rounded = Math.Round(result, 5);
-            Console.WriteLine(txt + "=" + rounded);
+            return rounded;
         }
     }
 }
